@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Workshop2
+namespace ClassLibrary
 {
     class ViewModel
     {
