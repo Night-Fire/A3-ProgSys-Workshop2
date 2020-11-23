@@ -6,9 +6,17 @@
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Margin="10">
-        <TextBox Name="textSource" Text="Hello!"/>
-        <Button x:Name="ToUppercase" Content="Make uppercase" Click="ToUppercase_Click"/>
-        <TextBox x:Name="textDest" IsReadOnly="True"/>
-    </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Name="textSource" Text="Hello!"/>
+        <Button Grid.Row="1" x:Name="ToUppercase" Content="Make uppercase" Click="ToUppercase_Click"/>
+        <TextBox Grid.Row="2" x:Name="textDest" IsReadOnly="True"/>
+    </Grid>
 </Window>
