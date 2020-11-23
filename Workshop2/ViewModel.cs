@@ -11,10 +11,18 @@ namespace Workshop2
         {
             this.model = new Model();
         }
-
         public void ToUpperCase()
         {
-            model.Message = model.Message.ToUpper();
+            string text = model.Message;
+            if (text.Length >= 1 && text.Length > 8)
+            {
+                text = text.ToUpper();
+            }
+            else
+            {
+                text = "Le mot doit faire entre 1 et 8 caractères";
+            }
+            model.Message = text;
         }
     }
 }

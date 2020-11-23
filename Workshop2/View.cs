@@ -20,17 +20,10 @@ namespace Workshop2
         public void GetInput()
         {
             string input = Console.ReadLine();
-            if (input.Length >=1 && input.Length < 9)
-            {
-                viewModel.model.Message = input;
-                viewModel.ToUpperCase();
-                string output = viewModel.model.Message;
-                this.DisplayMessage(output);
-            }
-            else
-            {
-                this.DisplayMessage("Le mot doit contenir entre 1 et 8 lettres");
-            }
+            viewModel.model.Message = input;
+            viewModel.ToUpperCase();
+            string output = viewModel.model.Message;
+            this.DisplayMessage(output);
         }
     }
 }
