@@ -7,6 +7,8 @@ namespace ClassLibrary
     public class Model
     {
         private string message;
+        public List<Object> tasks;
+        public Dictionary<string, DateTime> editedTime;
 
         public Model()
         {
